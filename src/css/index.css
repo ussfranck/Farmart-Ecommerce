@@ -1,0 +1,38 @@
+@font-face {
+  font-family: 'Manrope';
+  src: url('../assets/fonsts/Manrope-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('../assets/fonsts/Mulish-VariableFont_wght.ttf');
+}
+
+:root {
+  font-family: 'Manrope', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  
+  --color-white: #fff;
+  --primary-color: #fab529;
+  --color-grey: #ddd;
+  --color-black: #242424;
+
+  --main-font: 'Manrope';
+  --sfont: 'Mulish';
+
+  /* color-scheme: light dark; */
+  color: var(--color-black);
+  background-color: var(--color-white);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
