@@ -92,7 +92,10 @@ export const AppProductDynamicVisual: React.FC<APV_DynamicProps> = ({
                 className={`${baseConfig.className}__content-card`}
                 key={index}>
                 <div className={`${baseConfig.className}__content-card-logo`}>
-                  <img src={data.preview} alt='Product Images' />
+                  {/* <img src={data.preview} alt='Product Images' /> */}
+                  {
+                    data.productImage ? <img src={data.productImage} alt={data.itemName} className={`${baseConfig.className}__content-card-logo-img`}/> : null
+                  }
                   <div className='set-favorite-button'>
                     <BsHeart />
                   </div>
@@ -167,6 +170,9 @@ export const AppProductDynamicVisual: React.FC<APV_DynamicProps> = ({
                   {data.saver && (
                     <div className='banner-saver'>Save {data.saverNote}%</div>
                   )}
+                  {
+                    data.productImage ? <img src={data.productImage} alt={data.itemName} className={`${baseConfig.className}__content-card-logo-img`}/> : null
+                  }
                 </div>
                 <div className={`${baseConfig.className}__content__review`}>
                   <h4>{data?.itemName}</h4>

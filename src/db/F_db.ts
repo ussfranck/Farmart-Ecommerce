@@ -45,28 +45,29 @@ export const FeaturedBrandsData = [
   {
     itemName: "FoodPouch",
     note: "New Snacks Release",
-    preview: "/images/featured/img1.jpg"
+    productImage: "https://i.pinimg.com/564x/f2/c9/f1/f2c9f1f3318b8683e6515d17d3e40028.jpg"
   },
   {
     itemName: "Itea JSC",
     note: "Happy Tea 100% Organic From $29.9",
-    preview: "/images/featured/img2.jpg"
+    productImage: "/images/featured/img2.jpg"
   },
   {
     itemName: "Soda Brand",
     note: "Soda Can Box 24 Pieces - 30% OFF",
-    preview: "/images/featured/img3.jpg"
+    productImage: "https://i.pinimg.com/564x/3c/f4/db/3cf4dbb8c111a0f3b817811901709461.jpg"
   },
   {
     itemName: "Farmart",
     note: "Fresh Meat Sougage. BUY 2 GET 1!",
-    preview: "/images/featured/img4.jpg"
+    productImage: "https://i.pinimg.com/564x/90/d3/a6/90d3a61ecb9f768f9435d8e13422246d.jpg"
   },
 ];
 
 export const TopTodaySaverData = [
   {
     itemName: "Brand name",
+    productImage: "/images/topsavers/img1.png",
     note: "Ice Beck's Beer 350ml x 24 Pieces",
     hNote: "24 pieces / box",
     sold: "30/40",
@@ -78,6 +79,7 @@ export const TopTodaySaverData = [
   },
   {
     itemName: "Meat name",
+    productImage: "/images/topsavers/img2.png",
     hNote: "450g",
     note: "British Beef Mince (10% Fat)",
     sold: "25/100",
@@ -90,6 +92,7 @@ export const TopTodaySaverData = [
   },
   {
     itemName: "Farmart",
+    productImage: "/images/topsavers/img3.png",
     hNote: "800g",
     note: "Farmart Famhouse Soft White",
     sold: "9/20",
@@ -104,6 +107,7 @@ export const TopTodaySaverData = [
 export const BestSellersDatas= [
   {
     itemName: "Brand name",
+    productImage: "/images/bestsellers/img1.png",
     note: "Asia Green Bananas",
     hNote: "5kg",
     price: 19.25,
@@ -113,6 +117,7 @@ export const BestSellersDatas= [
   },
   {
     itemName: "Farmart",
+    productImage: "/images/bestsellers/img2.png",
     note: "British Beef Mine (Tyically 10% Fat)",
     hNote: "454g",
     price: 96.90,
@@ -122,6 +127,7 @@ export const BestSellersDatas= [
   },
   {
     itemName: "MartFury",
+    productImage: "/images/bestsellers/img3.png",
     note: "US Yellow Water Melon",
     hNote: "2kg",
     price: 5.5,
@@ -132,6 +138,7 @@ export const BestSellersDatas= [
   },
   {
     itemName: "Farmart",
+    productImage: "/images/bestsellers/img4.png",
     note: "Spicies Snacks 6 Ready Salted",
     hNote: "100g",
     price: 2.5,
@@ -142,6 +149,7 @@ export const BestSellersDatas= [
   },
   {
     itemName: "Farmart",
+    productImage: "/images/bestsellers/img5.png",
     note: "Oatmeal Cookies",
     hNote: "5.8g suger/serving",
     price: 25.6,
@@ -151,6 +159,7 @@ export const BestSellersDatas= [
   },
   {
     itemName: "Brand name",
+    productImage: "/images/bestsellers/img6.png",
     note: "Canned Rices With Tofus",
     hNote: "1 box",
     price: 12.32,
@@ -164,6 +173,7 @@ export const BestSellersDatas= [
 export const JustLandingData= [
   {
     itemName: "Supro",
+    productImage: "/images/justlanding/img1.png",
     note: "Canned Meat & Noodles",
     hNote: "1 box",
     price: 16.25,
@@ -173,6 +183,7 @@ export const JustLandingData= [
   },
   {
     itemName: "Brand Name",
+    productImage: "/images/justlanding/img2.png",
     note: "Waitrose Italian Beef Lasagne",
     hNote: "1 box",
     price: 17.9,
@@ -182,6 +193,7 @@ export const JustLandingData= [
   },
   {
     itemName: "Farmart",
+    productImage: "/images/justlanding/img3.png",
     note: "Hoge Garden Beer 350ml ",
     hNote: "12 pieces / box",
     price: 256.9,
@@ -191,6 +203,7 @@ export const JustLandingData= [
   },
   {
     itemName: "Brand Name",
+    productImage: "/images/justlanding/img4.png",
     note: "Fruits Honey For Kids",
     hNote: "100g",
     price: 8.9,
@@ -200,6 +213,7 @@ export const JustLandingData= [
   },
   {
     itemName: "MartFury",
+    productImage: "/images/justlanding/img5.png",
     note: "Hello Rabbit Box",
     hNote: "\0",
     price: 24.5,
@@ -209,6 +223,7 @@ export const JustLandingData= [
   },
   {
     itemName: "Teckoo",
+    productImage: "/images/justlanding/img6.png",
     note: "Sitema BakeIT Plastic Box",
     hNote: "6.6 Cup / 1.56L",
     price: 13.6,
@@ -221,6 +236,7 @@ export const JustLandingData= [
 export const EssentialProductsData = [
   {
     itemName: "MartFury",
+    productImage: "/images/essentials/img1.png",
     note: "Dried Synthetic Nuts",
     hNote: "500g",
     price: 11.9,
@@ -230,6 +246,7 @@ export const EssentialProductsData = [
   },
   {
     itemName: "MartFury",
+    productImage: "/images/essentials/img2.png",
     note: "Bottled Pure Water 500ml",
     hNote: "500ml",
     price: 2.6,
@@ -239,6 +256,7 @@ export const EssentialProductsData = [
   },
   {
     itemName: "MartFury",
+    productImage: "/images/essentials/img3.png",
     note: "Soft Machi & Galeto Ice Cream",
     hNote: "6 Machi Treats",
     price: 18.89,
@@ -248,6 +266,7 @@ export const EssentialProductsData = [
   },
   {
     itemName: "Brand Name",
+    productImage: "/images/essentials/img4.png",
     note: "MincedMmeat Noodles",
     hNote: "1 box",
     price: 22.65,
@@ -257,6 +276,7 @@ export const EssentialProductsData = [
   },
   {
     itemName: "Farmart",
+    productImage: "/images/essentials/img5.png",
     note: "Sesame Seed Bread",
     hNote: "1 loaf",
     price: 4.45,
@@ -266,6 +286,7 @@ export const EssentialProductsData = [
   },
   {
     itemName: "Brand Name",
+    productImage: "/images/essentials/img6.png",
     note: "Japan Frozen Fish Canned",
     hNote: "450g",
     price: 29.5,

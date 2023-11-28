@@ -883,6 +883,14 @@ section.app-categories-products {
   height: 200px;
   background-color: ghostwhite;
   position: relative;
+  overflow: hidden;
+}
+
+.app-today-saver-s__content-card-logo img,
+.sand-landing-sec__content-card-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .app-today-saver-s__content-card-logo .set-favorite-button,
@@ -1230,17 +1238,21 @@ section#sand-landing .sand-landing-sec:nth-of-type(2) {
 }
 
 .app-magestic-product > .app-magestic-product__card:first-child {
-  background-color: #f0b031;
+  /* background-color: #f0b031; */
+  background-image: url('https://i.pinimg.com/564x/1a/f3/bf/1af3bf6f186ca272d1b69276a7ecee0a.jpg');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: space-around;
   /* gap: 1.5em; */
   padding-left: 1em;
-  padding-top: 2em;
+  padding-top: 1.7em;
   padding-bottom: 1em;
 }
 
 .app-magestic-product > .app-magestic-product__card:first-child h3 {
-  font-size: 1.6em;
-  font-weight: 700;
+  font-size: 1.8em;
+  font-weight: bold;
   max-width: 50%;
   line-height: 1.3;
   letter-spacing: 0.025em;
@@ -1252,8 +1264,12 @@ section#sand-landing .sand-landing-sec:nth-of-type(2) {
 }
 
 .app-magestic-product > .app-magestic-product__card:nth-of-type(2) {
-  background-color: #d5dee5;
+  /* background-color: #d5dee5; */
   justify-content: space-around;
+  background-image: url('https://i.pinimg.com/564x/d9/ee/ee/d9eeee8f4a8556ae9ff434fd5aced0d8.jpg');
+  background-size: cover;
+  background-position: bottom -50px;
+  background-repeat: no-repeat
 }
 
 .app-magestic-product
@@ -1288,30 +1304,33 @@ section#sand-landing .sand-landing-sec:nth-of-type(2) {
   .app-magestici-product__card-review-price
   > div
   span {
-  color: #575a5d;
+  color: white;
   text-decoration: line-through;
   font-size: 0.9em;
-  font-weight: 600;
+  font-weight: bold;
 }
 
 .app-magestici-product__card-review-price h3 {
   max-width: 70%;
   text-transform: uppercase;
-  font-size: 1.5em;
+  font-size: 1.7em;
   line-height: 1.3;
   letter-spacing: 0.025em;
   margin-top: 0.8em;
-  font-weight: 600;
+  font-weight: bold;
+  color: #fdf8f8;
 }
 
 .app-magestic-product > .app-magestic-product__card:nth-of-type(2) p {
-  font-weight: 600;
+  font-weight: bold;
   font-size: 0.9em;
-  color: #737474;
+  color: white;
 }
 
 .app-magestic-product > .app-magestic-product__card:nth-of-type(3) {
-  background-color: #ef9b70;
+  /* background-color: #ef9b70; */
+  background-image: url('https://i.pinimg.com/564x/d4/e6/4a/d4e64a72394673bfdf870fe32043b579.jpg');
+  background-position: top;
   justify-content: space-around;
 }
 
@@ -1322,7 +1341,7 @@ section#sand-landing .sand-landing-sec:nth-of-type(2) {
   align-items: start;
   flex-direction: column;
   gap: 0.5em;
-  color: #fff;
+  color: #242424;
 }
 
 .app-magestic-product
@@ -1349,7 +1368,7 @@ section#sand-landing .sand-landing-sec:nth-of-type(2) {
   flex-direction: column;
   align-items: start;
   gap: 0.3em;
-  color: #fff;
+  color: #242424;
 }
 
 .app-magestic-product
