@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { AiFillStar } from 'react-icons/ai';
 import { IoIosArrowForward } from 'react-icons/io';
 import { PaginationButton } from './PaginationButton';
@@ -9,6 +9,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Chrono } from './Chrono';
 import { BsHeart } from 'react-icons/bs';
+import { motion } from 'framer-motion';
 
 const mob: number[] = [1, 2, 3, 4, 5];
 
@@ -21,6 +22,7 @@ interface APV_DynamicProps {
     swiperSpaceBetween: number | 20;
     title: string;
     urlTag: string | null;
+    urlLink: string | undefined;
   };
   pagInfos: {
     prevRef: any;
@@ -39,13 +41,20 @@ export const AppProductDynamicVisual: React.FC<APV_DynamicProps> = ({
   type,
   xyId,
 }) => {
+  const [quota, setQuota] = useState(0);
+  const addQuota =  () => {
+    setQuota((prev) => prev + 1);
+  }
+  const reduceQuota = () => {
+    setQuota((prev) => prev > 0 ? prev -1 : 0);
+  }
   return (
     <section className={baseConfig.className}>
       {type === 'base' ? (
         <div className={`${baseConfig.className}__heading`}>
           <div className={`${baseConfig.className}__heading-left`}>
             <h3>{baseConfig.title}</h3>
-            <a href={'https://google.com'}>
+            <a href={baseConfig.urlLink}>
               {baseConfig.urlTag} <IoIosArrowForward />
             </a>
             {attachComponent && <Chrono />}
@@ -135,15 +144,15 @@ export const AppProductDynamicVisual: React.FC<APV_DynamicProps> = ({
                         </div>
                         <div>
                           <div className='counter-actions'>
-                            <div className='button'>-</div>
-                            <p className='counter-actions-view'>0</p>
-                            <div className='button'>+</div>
+                            <div className='button' onClick={reduceQuota}>-</div>
+                            <p className='counter-actions-view'>{quota}</p>
+                            <div className='button' onClick={addQuota}>+</div>
                           </div>
                           <h4>
                             Total: <span>$00.0</span>
                           </h4>
                         </div>
-                        <button type='button'>Add to cart</button>
+                        <motion.button whileTap={{scale: .8}} type='button'>Add to cart</motion.button>
                       </div>
                     </div>
                   )}
@@ -206,15 +215,15 @@ export const AppProductDynamicVisual: React.FC<APV_DynamicProps> = ({
                               </div> */}
                         <div>
                           <div className='counter-actions'>
-                            <div className='button'>-</div>
-                            <p className='counter-actions-view'>0</p>
-                            <div className='button'>+</div>
+                            <div className='button' onClick={reduceQuota}>-</div>
+                            <p className='counter-actions-view'>{quota}</p>
+                            <div className='button' onClick={addQuota}>+</div>
                           </div>
                           <h4>
                             Total: <span>$00.0</span>
                           </h4>
                         </div>
-                        <button type='button'>Add to cart</button>
+                        <motion.button whileTap={{scale: .8}} type='button'>Add to cart</motion.button>
                       </div>
                     </div>
                   )}

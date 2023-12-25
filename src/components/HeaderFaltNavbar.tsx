@@ -24,20 +24,20 @@ export const HeaderFaltNavbar = () => {
           <span>Support 24/7</span>
         </div>
         <div>
-          <div className='app-header-falt-nav__utility-actions__box-icon'>
+          <a href='/account' className='app-header-falt-nav__utility-actions__box-icon'>
             <IoPersonOutline />
-          </div>
-          <div className='app-header-falt-nav__utility-actions__box-icon'>
+          </a>
+          <a href='#favorite' className='app-header-falt-nav__utility-actions__box-icon'>
             <BsHeart />
-            <div className='app-icon-badge'>3</div>
-          </div>
-          <div className='app-header-falt-nav__utility-actions__box-icon'>
+            <div className='app-icon-badge'>0</div>
+          </a>
+          <a href='/cart' className='app-header-falt-nav__utility-actions__box-icon'>
             <BsCart3 />
-            <div className='app-icon-badge'>12</div>
-          </div>
+            <div className='app-icon-badge'>0</div>
+          </a>
           <div className='user-get-view'>
             <span>You cart</span>
-            <p>$2,650.59</p>
+            <p role='contentinfo' title='you current money'>$2,650.59</p>
           </div>
         </div>
       </div>

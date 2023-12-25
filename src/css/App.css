@@ -59,6 +59,7 @@ button.primary-button {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  cursor: pointer;
 }
 
 .app-logo img {
@@ -91,10 +92,12 @@ button.primary-button {
 /* Header Falt Navigation Bar : start */
 
 header {
-  /* position: fixed; */
-  /* top: 0; */
+  position: sticky;
+  top: 0;
   width: 100%;
-  padding: 1em 0 1em 0em;
+  padding: 1em 2rem;
+  z-index: 9999 !important;
+  background-color: var(--color-white);
 }
 
 .app-header-falt-nav {
@@ -124,6 +127,7 @@ header {
   height: 100%;
   text-transform: uppercase;
   font-weight: 500;
+  cursor: pointer;
   font-family: var(--main-font);
 }
 
@@ -153,6 +157,10 @@ header {
   width: 22px;
   height: 22px;
   object-fit: contain;
+}
+
+.search-bar-btn:hover svg {
+  color: var(--primary-color);
 }
 
 .app-header-falt-nav__utility-actions {
@@ -186,6 +194,7 @@ header {
   align-items: center;
   justify-content: center;
   position: relative;
+  cursor: pointer;
   /* background-color: gray; */
 }
 
@@ -283,6 +292,7 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5em;
+  cursor: pointer;
 }
 
 .sub-nav-heading__left-side__utility-box svg {
@@ -376,6 +386,10 @@ header {
   font-size: 1em;
   color: #fff;
   background-color: #d5dee5;
+  background-image: url(https://i.pinimg.com/564x/d0/04/76/d00476e70526a03d0fc017f83856ba9e.jpg);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 60px;
@@ -404,7 +418,7 @@ header {
 .swiper-slide .subtitle {
   font-size: 1em;
   font-weight: 300;
-  color: var(--color-black);
+  color: var(--color-white);
 }
 
 .swiper-slide .text {
@@ -413,7 +427,7 @@ header {
   margin-top: 0.7em;
   font-size: 1em;
   opacity: 0.9;
-  color: #5b7081;
+  color: var(--color-black);
 }
 
 .swiper-slide a.a-btn {
@@ -429,6 +443,10 @@ header {
   width: 40%;
   height: 100%;
   background-color: #fac251;
+  background-image: url(https://i.pinimg.com/564x/f0/de/bc/f0debc8aa29ee98d492ca553379fb152.jpg);
+  background-position: end;
+  background-repeat: no-repeat;
+  background-size: cover;
   border-radius: 0.4em !important;
   display: flex;
   align-items: start;
@@ -481,6 +499,7 @@ header {
   display: flex;
   align-items: center;
   gap: 0.3em;
+  z-index: 5 !important;
 }
 
 .pagination-btn-container__button {
@@ -492,6 +511,7 @@ header {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  z-index: 5 !important;
 }
 
 .pagination-btn-container__button svg {
@@ -1294,7 +1314,7 @@ section#sand-landing .sand-landing-sec:nth-of-type(2) {
   .app-magestici-product__card-review-price
   > div
   h2 {
-  color: #fa532d;
+  color: var(--color-white);
   font-weight: bold;
   font-size: 2em;
 }
